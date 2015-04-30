@@ -1,0 +1,4 @@
+PROJECT( helloworld_proj )
+FIND_PACKAGE( OpenCV REQUIRED )
+ADD_EXECUTABLE( cam cam.cpp )
+TARGET_LINK_LIBRARIES( cam ${OpenCV_LIBS} )
